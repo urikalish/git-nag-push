@@ -1,6 +1,6 @@
 REM GitNagPush by Uri Kalish
 REM This code tries to pull-rebase-push until it succeeds, while sleeping for X seconds between failed attempts.
-REM Ideal for pushing to soon-to-melt frozen branches while enjoying Sushi for lunch.
+REM Ideal for pushing to soon-to-melt frozen branches while enjoying sushi for lunch.
 REM Please configure the PERSONALIZED SETTINGS section below:
 
 setlocal

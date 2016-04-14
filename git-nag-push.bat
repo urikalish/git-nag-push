@@ -1,4 +1,4 @@
-REM NagPush by Uri Kalish
+REM GitNagPush by Uri Kalish
 REM This code tries to pull-rebase-push until it succeeds, while sleeping for X seconds between failed attempts.
 REM Ideal for pushing to soon-to-melt frozen branches while enjoying Sushi for lunch.
 REM Please configure the PERSONALIZED SETTINGS section below:
@@ -11,20 +11,20 @@ set secondsToWaitBetweenAttempts=300
 REM ********** PERSONALIZED SETTINGS - END
 
 set codeVersion=1.0.1
-set echoPrefix=NagPush:
+set echoPrefix=GitNagPush:
 set counter=0;
 @echo off
 color 0f
 cls
-@echo ----------------------------
-@echo NagPush v%codeVersion% by Uri Kalish
-@echo ----------------------------
+@echo -------------------------------
+@echo GitNagPush v%codeVersion% by Uri Kalish
+@echo -------------------------------
 echo %echoPrefix% Changing directory to %localGitRepositoryPath%...
 cd %localGitRepositoryPath%
 echo %echoPrefix% CD OK
 
 :loopstart
-@echo ----------------------------
+@echo -------------------------------
 set /a counter=counter+1
 echo %echoPrefix% Attempt #%counter%
 

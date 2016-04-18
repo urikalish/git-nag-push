@@ -1,7 +1,7 @@
 REM GitNagPush by Uri Kalish
 REM This batch file will try to pull, rebase, and push until it succeeds, while sleeping for X seconds between failed attempts.
 REM Ideal for pushing to soon-to-melt frozen branches while enjoying sushi for lunch.
-REM Before the first usage, please configure the PERSONALIZED SETTINGS section below:
+REM Before the first use, please configure the PERSONALIZED SETTINGS section below:
 
 setlocal
 

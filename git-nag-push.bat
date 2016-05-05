@@ -48,7 +48,7 @@ if errorlevel 1 goto pusherror
 goto pushsuccess
 :pusherror
 echo %echoPrefix% Push ERROR
-color 0c
+color 0e
 goto :pushend
 :pushsuccess
 color 0a

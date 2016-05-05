@@ -10,7 +10,7 @@ set localGitRepositoryPath=C:\QC\Views\Git\mqm
 set secondsToWaitBetweenAttempts=300
 REM ********** PERSONALIZED SETTINGS - END
 
-set codeVersion=1.0.0
+set codeVersion=1.1.0
 set echoPrefix=GitNagPush:
 set counter=0;
 @echo off

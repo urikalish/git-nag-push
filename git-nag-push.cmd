@@ -1,5 +1,5 @@
 REM GitNagPush by Uri Kalish
-REM This cmd file will try to pull, rebase, and push until it succeeds, while sleeping for X seconds between failed attempts.
+REM This cmd file will try to pull, rebase, and push until it succeeds, while sleeping for X minutes between failed attempts.
 REM Ideal for pushing to soon-to-melt frozen branches while enjoying sushi for lunch.
 REM Before the first use, please configure the PERSONALIZED SETTINGS section below:
 
@@ -7,7 +7,7 @@ setlocal
 
 REM ********** PERSONALIZED SETTINGS - START
 set localGitRepositoryPath=C:\QC\Views\Git\mqm
-set secondsToWaitBetweenAttempts=300
+set minutesToWaitBetweenAttempts=5
 REM ********** PERSONALIZED SETTINGS - END
 
 set codeVersion=1.0.1
@@ -22,6 +22,8 @@ cls
 echo %echoPrefix% Changing directory to %localGitRepositoryPath%...
 cd %localGitRepositoryPath%
 echo %echoPrefix% CD OK
+echo %minutesToWaitBetweenAttempts% minutes between attempts
+set /a secondsToWaitBetweenAttempts=minutesToWaitBetweenAttempts*60
 
 :loopstart
 @echo -------------------------------

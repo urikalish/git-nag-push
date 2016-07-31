@@ -22,7 +22,7 @@ cls
 echo %echoPrefix% Changing directory to %localGitRepositoryPath%...
 cd %localGitRepositoryPath%
 echo %echoPrefix% CD OK
-echo %minutesToWaitBetweenAttempts% minutes between attempts
+echo %echoPrefix% Minutes between attempts: %minutesToWaitBetweenAttempts%
 set /a secondsToWaitBetweenAttempts=minutesToWaitBetweenAttempts*60
 
 :loopstart

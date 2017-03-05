@@ -59,7 +59,8 @@ goto :end
 :pushend
 
 :wait
-timeout /t %secondsToWaitBetweenAttempts% 
+echo Waiting for %minutesToWaitBetweenAttempts% minutes...
+ping 127.0.0.1 -n %secondsToWaitBetweenAttempts% > nul
 
 :loopend
 goto :loopstart

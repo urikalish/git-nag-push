@@ -6,11 +6,11 @@ REM Ideal for pushing to soon-to-melt frozen branches while enjoying sushi for l
 REM Before the first use, please configure the PERSONALIZED SETTINGS section below:
 
 REM ********** PERSONALIZED SETTINGS - START
-set localGitRepositoryPath=C:\QC\Views\Git\mqm
+set localGitRepositoryPath=C:\dev\mqm
 set minutesToWaitBetweenAttempts=5
 REM ********** PERSONALIZED SETTINGS - END
 
-set codeVersion=1.0.6
+set codeVersion=1.0.7
 set echoPrefix=GitNagPush:
 set counter=0;
 color 0f
